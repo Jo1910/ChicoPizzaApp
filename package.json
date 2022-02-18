@@ -1,0 +1,14 @@
+{
+  "name": "chicoburgers",
+  "version": "1.0.0",
+  "description": "Restaurant menu app",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o pages/css/ --recursive"
+  },
+  "author": "Jovana Mitic",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
