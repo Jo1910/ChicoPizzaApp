@@ -1,5 +1,101 @@
+@import "config";
 $primary-color: red;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: $primary-color;
+  @include backgroundImage();
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+#btnOrder {
+  width: 110px;
+  height: 40px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #470c08;
+  border-radius: 3px;
+
+  &:hover {
+    background: darken($primary-color, 10);
+    color: white;
+    @include easeOut;
+  }
+
+  &:focus {
+    background: darken($primary-color, 20);
+    @include easeOut;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.menu {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  width: 60%;
+  height: auto;
+  margin-top: 4rem;
+  background-color: rgba(90, 59, 47, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+
+  &-header {
+    text-align: center;
+    color: #d94a16;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &-offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-left: 30px;
+    padding: 20px;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #d94a16;
+      margin-bottom: 10px;
+    }
+
+    input {
+      margin: 5px;
+      font-size: 1rem;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+
+    span {
+      color: #03062b;
+      margin-right: 30px;
+      float: right;
+    }
+  }
+}
+
+.cart {
+  //   margin-top: 20px;
+  //   margin-bottom: 20px;
+  margin: 20px;
+  button {
+    float: right;
+  }
+
+  #totalPrice {
+    color: #03062b;
+    font-size: 1.3rem;
+  }
 }

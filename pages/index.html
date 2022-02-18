@@ -7,7 +7,254 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Chico Burgers</title>
   </head>
-  <body>
-    <h2>hello</h2>
+  <body id="bg-cover">
+    <div class="container">
+      <div class="menu">
+        <div class="menu-header">
+          <h1>Chico Menu - Order Your Meal</h1>
+        </div>
+
+        <div class="menu-offers">
+          <!-- Burgers -->
+          <div class="burgers">
+            <h2>Chico Burgers</h2>
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Simple Beef Burger"
+              value="2.90"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Simple Beef Burger <span>$2.90</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Cheese Burger"
+              value="3.20"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Cheese Burger <span>$3.20</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Chicken Burger"
+              value="4.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Chicken Burger <span>$4.50</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Pizza Burger"
+              value="4.30"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Pizza Burger <span>$4.30</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Vegeterian Burger"
+              value="4.00"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Vegeterian Burger <span>$4.00</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Chico Special Burger"
+              value="5.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Chico Special Burger <span>$5.50</span><br />
+          </div>
+
+          <!-- Sandwiches -->
+          <div class="sandwiches">
+            <h2>Chico Sandwiches</h2>
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Sandwiches"
+              value="2.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Ham & Cheese Sandwich <span>$2.50</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Sandwiches"
+              value="2.80"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Ham, Cheese & Egg Sandwich <span>$2.80</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Sandwiches"
+              value="3.00"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Vegeterian Sandwich <span>$3.00</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Sandwiches"
+              value="3.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Tuna Sandwich <span>$3.50</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Sandwiches"
+              value="4.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Chicken Sandwich <span>$4.50</span><br />
+          </div>
+
+          <!-- Salads -->
+          <div class="salads">
+            <h2>Chico Salads</h2>
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Salads"
+              value="5.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Chicken Ceasar Salad <span>$5.50</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Salads"
+              value="5.20"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Tuna Salad <span>$5.20</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Salads"
+              value="5.70"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Beef Salad <span>$5.70</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Salads"
+              value="3.70"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Mixed Green Salad <span>$3.70</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Salads"
+              value="4.60"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Greek Salad <span>$4.60</span><br />
+          </div>
+
+          <!-- Toppings -->
+          <div class="toppings">
+            <h2>Chico Toppings</h2>
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Toppings"
+              value="1.00"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Cheese <span>$1.00</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Toppings"
+              value="0.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Corn <span>$0.50</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Toppings"
+              value="0.80"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Olives <span>$0.80</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Toppings"
+              value="0.80"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Pickles <span>$0.80</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Toppings"
+              value="1.00"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Egg <span>$1.00</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Toppings"
+              value="1.00"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Proscuitto <span>$1.00</span><br />
+
+            <input
+              class="order-item"
+              type="checkbox"
+              name="Toppings"
+              value="0.50"
+              onchange="getTotal()"
+              autocomplete="off"
+            />Peppers <span>$0.50</span><br />
+          </div>
+        </div>
+
+        <div class="cart">
+          <button
+            id="btnOrder"
+            type="button"
+            onclick="resetOrder()"
+            value="Reset Order"
+          >
+            Reset Order
+          </button>
+          <div id="totalPrice"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- https://unsplash.com/photos/URjZkhqsuBk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
   </body>
 </html>
