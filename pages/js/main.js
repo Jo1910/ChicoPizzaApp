@@ -1,6 +1,3 @@
-// var total = 0;
-// var burgerArray = document.getElementsByClassName("order-item");
-
 function getTotal() {
   var total = 0;
   var burgerArray = document.getElementsByClassName("order-item");
@@ -8,7 +5,6 @@ function getTotal() {
   for (var i = 0; i < burgerArray.length; i++) {
     if (burgerArray[i].checked) {
       total += parseFloat(burgerArray[i].value);
-      console.log("selected burger: (" + burgerArray[i].value);
     }
   }
   document.getElementById("totalPrice").innerHTML =
@@ -19,4 +15,16 @@ function resetOrder() {
   $(".order-item").prop("checked", false);
 
   document.getElementById("totalPrice").innerHTML = "";
+}
+
+// Open the menu and hide the "Welcome" div
+function openMenu() {
+  document.getElementById("menu").style.display = "block";
+  document.getElementById("welcome").style.display = "none";
+}
+
+// Close the menu and show the "Welcome" div
+function closeMenu() {
+  document.getElementById("menu").style.display = "none";
+  document.getElementById("welcome").style.display = "block";
 }

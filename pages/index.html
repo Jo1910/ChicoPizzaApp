@@ -9,9 +9,28 @@
   </head>
   <body id="bg-cover">
     <div class="container">
-      <div class="menu">
+      <div class="welcome" id="welcome">
+        <h2>Welcome to Chico Restaurant!</h2>
+        <p>
+          Here at Chico's we proud ourselves on quality and taste. We choose
+          only the finest ingredients for our dishes. Try our famous burgers,
+          sandwiches or salads. We garantee you will come back for more.
+        </p>
+        <br />
+
+        <button onclick="openMenu()" id="openBtn">Our Menu</button>
+      </div>
+
+      <div class="menu" id="menu">
         <div class="menu-header">
-          <h1>Chico Menu - Order Your Meal</h1>
+          <h1>
+            Chico Menu
+            <span
+              ><button onclick="closeMenu()" id="closeBtn">
+                &times;
+              </button></span
+            >
+          </h1>
         </div>
 
         <div class="menu-offers">
@@ -242,7 +261,7 @@
 
         <div class="cart">
           <button
-            id="btnOrder"
+            id="resetBtn"
             type="button"
             onclick="resetOrder()"
             value="Reset Order"

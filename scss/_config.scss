@@ -1,3 +1,4 @@
+$primary-color: #fb8e5b;
 $show-home-image: true;
 $home-image: url(img/restaurant.jpg);
 $background-opacity: 0.5;
@@ -12,6 +13,9 @@ $background-opacity: 0.5;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 
       &::after {
         content: "";
@@ -24,5 +28,30 @@ $background-opacity: 0.5;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Media Query Mixins
+@mixin smallScreens {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediumScreens {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin largeScreens {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin XLargeScreens {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }

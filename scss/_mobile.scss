@@ -1,0 +1,95 @@
+// Widescreens
+@include XLargeScreens {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+// Desktops & Laptops
+@include largeScreens {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@include mediumScreens {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@include smallScreens {
+  body {
+    height: 100vh;
+  }
+  //   #bg-cover {
+  //     &::after {
+  //       content: "";
+  //       position: absolute;
+  //       top: 0;
+  //       right: 0;
+  //       bottom: 0;
+  //       width: 100%;
+  //       height: 100%;
+  //       z-index: -1;
+  //       background: rgba($primary-color, $background-opacity);
+  //     }
+  //   }
+  .container {
+    .welcome {
+      margin-top: 20px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        width: 65%;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+    }
+    .menu {
+      width: 90%;
+
+      &-header {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      &-offers {
+        padding: 10px;
+        grid-template-areas:
+          "burgers"
+          "sandwiches"
+          "salads"
+          "toppings";
+
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+
+        span {
+          margin-right: 5px;
+          font-weight: bold;
+        }
+      }
+
+      .cart {
+        #resetBtn {
+          margin-top: 15px;
+          margin-right: 10px;
+          background: lighten($primary-color, 15);
+
+          &:hover {
+            background: darken($primary-color, 20);
+          }
+
+          &:focus {
+            background: darken($primary-color, 30);
+            color: white;
+          }
+        }
+        #totalPrice {
+          background: lighten($primary-color, 30);
+          h3 {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
