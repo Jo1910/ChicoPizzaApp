@@ -4,7 +4,7 @@
   "description": "Restaurant menu app",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o pages/css/ --recursive"
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "author": "Jovana Mitic",
   "license": "MIT",
