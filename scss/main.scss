@@ -10,6 +10,7 @@
 body {
   @include backgroundImage();
   font-family: "Architects Daughter", cursive;
+  user-select: none;
 }
 
 #resetBtn {

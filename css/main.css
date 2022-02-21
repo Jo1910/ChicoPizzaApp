@@ -5,11 +5,13 @@
   padding: 0; }
 
 body {
-  font-family: "Architects Daughter", cursive; }
+  font-family: "Architects Daughter", cursive;
+  user-select: none; }
   body#bg-cover {
     background: url(img/restaurant.jpg);
     background-attachment: fixed;
     background-size: cover;
+    height: 1200px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; }
@@ -19,7 +21,8 @@ body {
       top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 1200px;
+      min-height: 100vh;
       z-index: -1;
       background: rgba(251, 142, 91, 0.5); }
 
